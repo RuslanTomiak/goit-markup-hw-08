@@ -1,0 +1,16 @@
+:root {
+    --hover-color: #2196f3;
+    --team-color: #757575;
+    --white-text: #ffffff;
+    --site-nav-text: #212121;
+    --back-list-color: #f5f4fa;
+    --special-btn-color: #188ce8;
+    --color-black: #000000;
+    --footer-bgc: #2f303a;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  body {
+    background: var(--white-text);
+    color: var(--color-black);
+    font-family: "Roboto", sans-serif;
+  }
