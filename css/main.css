@@ -53,8 +53,13 @@ img {
 
 .list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .list {
+    flex-wrap: wrap;
+  }
 }
 
 .visually-hidden {
@@ -76,6 +81,21 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -222,13 +242,22 @@ img {
 }
 
 .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.feature__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .feature__icon {
@@ -249,6 +278,7 @@ img {
   color: var(--site-nav-text);
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .feature__text {
@@ -260,7 +290,17 @@ img {
 }
 
 .feature__item {
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .skills {
@@ -302,8 +342,14 @@ img {
 
 .team {
   background-color: var(--back-list-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -313,7 +359,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--site-nav-text);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
 }
 
 .team__peple {
@@ -370,6 +421,16 @@ img {
   background-color: var(--white-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .clients {

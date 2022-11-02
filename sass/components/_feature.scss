@@ -1,12 +1,20 @@
 
   .feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;      
+    }
   }
   
-  .feature__list {
-    display: flex;    
-    gap: 30px;
+  .feature__list {  
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;    
+      gap: 30px;
+      
+    }
   }
     
   .feature__icon {
@@ -27,6 +35,7 @@
     color: var(--site-nav-text);
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
   }
   .feature__text {
     font-weight: 400;
@@ -35,6 +44,12 @@
     letter-spacing: 0.03em;
     color: var(--team-color);
   }
-  .feature__item {    
-    flex-basis: calc((100% - 90px)/4);
+  .feature__item {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px)/2);    
+    } 
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px)/4);    
+    } 
   }
