@@ -17,7 +17,7 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />    
+    />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
@@ -144,13 +144,31 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list">
             <li class="team__list">
-              <img
-                srcset="./img/igor.jpg 1x, ./img/igor-2x.jpg 2x"
-                src="./img/igor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/team/igor.jpg 1x, ./img/team/igor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/igor-tab.jpg    1x,
+                    ./img/team/igor-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/igor-mob.jpg    1x,
+                    ./img/team/igor-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/team/igor.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                />
+              </picture>
               <h3 class="team__peple">Ігор Дем'яненко</h3>
               <p class="team__description">Product Designer</p>
               <ul class="team__social-list list">
@@ -185,13 +203,27 @@
               </ul>
             </li>
             <li class="team__list">
-              <img
-                srcset="./img/olga.jpg 1x, ./img/olga-2x.jpg 2x"
-                src="./img/olga.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/team/olga.jpg 1x, ./img/team/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/olga-tab.jpg    1x,
+                    ./img/team/olga-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/olga-mob.jpg    1x,
+                    ./img/team/olga-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/team/olga.jpg" alt="Ольга Рєпіна" width="450" />
+              </picture>
               <h3 class="team__peple">Ольга Рєпіна</h3>
               <p class="team__description">Frontend Developer</p>
               <ul class="team__social-list list">
@@ -226,13 +258,31 @@
               </ul>
             </li>
             <li class="team__list">
-              <img
-                srcset="./img/mykola.jpg 1x, ./img/mykola-2x.jpg 2x"
-                src="./img/mykola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/team/mykola.jpg 1x, ./img/team/mykola-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/mykola-tab.jpg    1x,
+                    ./img/team/mykola-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/mykola-mob.jpg    1x,
+                    ./img/team/mykola-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/team/mykola.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                />
+              </picture>
               <h3 class="team__peple">Микола Тарасов</h3>
               <p class="team__description">Marketing</p>
               <ul class="team__social-list list">
@@ -267,13 +317,31 @@
               </ul>
             </li>
             <li class="team__list">
-              <img
-                srcset="./img/myhailo.jpg 1x, ./img/myhailo-2x.jpg 2x"
-                src="./img/myhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/team/myhailo.jpg 1x, ./img/team/myhailo-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/myhailo-tab.jpg    1x,
+                    ./img/team/myhailo-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/myhailo-mob.jpg    1x,
+                    ./img/team/myhailo-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/team/myhailo.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                />
+              </picture>              
               <h3 class="team__peple">Михайло Єрмаков</h3>
               <p class="team__description">UI Designer</p>
               <ul class="team__social-list list">
