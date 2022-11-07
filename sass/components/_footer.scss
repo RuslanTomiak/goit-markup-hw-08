@@ -7,11 +7,49 @@
 }
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 60px;
+  
+  @media screen and (min-width: 768px) {
+       
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row; 
+    align-items: baseline; 
+    gap: 0; 
+  }
+}
+.footer__list-adress {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  @media screen and (min-width: 768px) {
+    gap: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+}
+.footer__adress {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: block; 
+    flex-direction: row;
+  }
 }
 .logo-footer {
   display: inline-block;
+  margin: auto;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+   margin: 0; 
+    
+  }
+
 }
 .logo-studio-white {
   color: var(--white-text);
@@ -38,6 +76,10 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--white-text);
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+   }
 }
 .footer-link {
   display: flex;
@@ -59,7 +101,10 @@
 }
 
 .footer-social-link {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+  
 }
 .footer-social-list {
   display: flex;
@@ -85,16 +130,27 @@
     color: var(--hover-color);
   }
 }
-
+.list-link {
+ text-align: center;
+ @media screen and (min-width: 1200px) {
+  text-align: start;
+}
+}
 .list-link li:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .footer-send-form {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+  
 }
 .form-field-footer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
 }
 .form-label-footer {
@@ -108,16 +164,24 @@
   text-transform: uppercase;
   color: var(--white-text);
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .form-input-footer {
   padding: 15px 16px;
-  width: 358px;
+  width: 450px;
   background-color: inherit;
   outline: transparent;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: var(--team-color);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
 }
 .form-btn-footer {
   gap: 10px;
