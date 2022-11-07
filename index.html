@@ -52,56 +52,65 @@
           </li>
         </ul>
         <!-- мобільне меню -->
-        <button type="button" class="open-menu">
+        <button type="button" class="open-menu" data-menu-open>
           <svg class="icon-open-menu" width="40" height="40">
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
-        <button data-modal-close class="close-button" width="30" height="30">
-          <svg class="icon-close-btn" width="20" height="20">
-            <use href="./img/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <ul class="mob-menu__nav">
-          <li><a class="mob-menu__nav-list" href="./index.html">Студія</a></li>
-          <li><a class="mob-menu__nav-list" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="mob-menu__nav-list" href="#">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="mob-menu__contacts">        
-        <li><a class="mob-menu__contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-        <li><a class="mob-menu__contact-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-      <ul class="mob-menu__social-list">
-        <li>
-          <a class="social-list__link" href="https://www.instagram.com/" target="_blank"
-          rel="noopener noreferrer">            
-            Instagram
-          </a>
-        </li>
-        <li>
-          <a class="social-list__link" href="https://twitter.com/" target="_blank"
-          rel="noopener noreferrer">
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a class="social-list__link" href="https://www.facebook.com/" target="_blank"
-          rel="noopener noreferrer">
-            Facebook
-          </a>
-        </li>
-        <li>
-          <a class="social-list__link" href="https://www.linkedin.com/" target="_blank"
-          rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+      <div class="mob-menu is-hidden" data-menu>
+          <button data-menu-close class="mob-menu__close-button">
+            <svg class="mob-menu__icon-close" width="30" height="30">
+               <use href="./img/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div class="mob-menu_container">
+            <div>
+              <ul class="mob-menu__nav">
+                 <li><a class="mob-menu__nav-list" href="./index.html">Студія</a></li>
+                 <li><a class="mob-menu__nav-list" href="./portfolio.html">Портфоліо</a></li>
+                 <li><a class="mob-menu__nav-list" href="#">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="mob-menu__section">
+              <ul class="mob-menu__contacts">
+               <li>
+                <a class="mob-menu__contact-tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+               </li>
+               <li>
+                <a
+                  class="mob-menu__contact-email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+               </li>
+              </ul>
+              <ul class="mob-menu__social-list">
+              <li><a class="social-list__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Instagram</a></li>
+              <li><a class="social-list__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Twitter</a></li>
+              <li><a class="social-list__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Facebook</a></li>
+              <li><a class="social-list__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >LinkedIn</a></li>
+              </ul>
+            </div>
+           </div>
       </div>
     </header>
 
@@ -175,24 +184,30 @@
           <h2 class="skills__title">Чим ми займаємося</h2>
           <ul class="list">
             <li class="skills__images">
-              <img srcset="
-              ./img/box1.jpg 1x,
-              ./img/box1-2x.jpg 2x"
-               src="./img/box1.jpg" width="370" alt="ми працюємо" />
+              <img
+                srcset="./img/box1.jpg 1x, ./img/box1-2x.jpg 2x"
+                src="./img/box1.jpg"
+                width="370"
+                alt="ми працюємо"
+              />
               <p class="skills__text">Десктопні додатки</p>
             </li>
             <li class="skills__images">
-              <img srcset="
-              ./img/box2.jpg 1x,
-              ./img/box2-2x.jpg 2x"
-               src="./img/box2.jpg" width="370" alt="оптимізація в дії" />
+              <img
+                srcset="./img/box2.jpg 1x, ./img/box2-2x.jpg 2x"
+                src="./img/box2.jpg"
+                width="370"
+                alt="оптимізація в дії"
+              />
               <p class="skills__text">Мобільні додатки</p>
             </li>
             <li class="skills__images">
-              <img srcset="
-              ./img/box3.jpg 1x,
-              ./img/box3-2x.jpg 2x"
-               src="./img/box3.jpg" width="370" alt="палітра кольорів" />
+              <img
+                srcset="./img/box3.jpg 1x, ./img/box3-2x.jpg 2x"
+                src="./img/box3.jpg"
+                width="370"
+                alt="палітра кольорів"
+              />
               <p class="skills__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -379,7 +394,10 @@
             <li class="team__list">
               <picture>
                 <source
-                  srcset="./img/team/myhailo.jpg 1x, ./img/team/myhailo-2x.jpg 2x"
+                  srcset="
+                    ./img/team/myhailo.jpg    1x,
+                    ./img/team/myhailo-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
@@ -401,7 +419,7 @@
                   alt="Михайло Єрмаков"
                   width="450"
                 />
-              </picture>              
+              </picture>
               <h3 class="team__peple">Михайло Єрмаков</h3>
               <p class="team__description">UI Designer</p>
               <ul class="team__social-list list">
@@ -508,7 +526,7 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div>
           <a class="logo logo-footer" href="./index.html"
@@ -591,9 +609,9 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
         <button data-modal-close class="close-button" width="30" height="30">
@@ -655,7 +673,8 @@
           <button class="form-btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+     <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
   </body>
 </html>
