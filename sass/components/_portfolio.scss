@@ -1,6 +1,10 @@
 .portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+     padding-top: 94px;
+  }
 }
 .portfolio__btn {
   font-family: "Roboto", sans-serif;
@@ -45,9 +49,18 @@
 }
 .portfolio__list-button {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;  
   gap: 8px;
-  margin-bottom: 50px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    
+  }
 }
 .portfolio__top-list {
   display: flex;
@@ -84,6 +97,7 @@
 }
 .portfolio__all-items {
   flex-basis: calc((100% - 60px) / 3);
+  min-width: 450px;
 }
 .portfolio__all-items-link {
   display: block;

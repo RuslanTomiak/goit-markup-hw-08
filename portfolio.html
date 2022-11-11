@@ -33,7 +33,7 @@
             <li><a href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts page-nav">
+        <ul class="contacts">
           <li>
             <a class="contact-link" href="mailto:info@devstudio.com">
               <svg class="contact-logo" width="16" height="12">
@@ -51,6 +51,88 @@
             >
           </li>
         </ul>
+        <!-- мобільне меню -->
+        <button type="button" class="open-menu" data-menu-open>
+          <svg class="icon-open-menu" width="40" height="40">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button data-menu-close class="mob-menu__close-button">
+          <svg class="mob-menu__icon-close" width="30" height="30">
+            <use href="./img/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="mob-menu_container">
+          <div>
+            <ul class="mob-menu__nav">
+              <li>
+                <a class="mob-menu__nav-list" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="mob-menu__nav-list" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a class="mob-menu__nav-list" href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu__section">
+            <ul class="mob-menu__contacts">
+              <li>
+                <a class="mob-menu__contact-tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mob-menu__contact-email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu__social-list">
+              <li>
+                <a
+                  class="social-list__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="social-list__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  class="social-list__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  class="social-list__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -275,64 +357,67 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <div>
-          <a class="logo logo-footer" href="./index.html"
-            >Web<span class="logo-studio-white">Studio</span>
-          </a>
-          <address>
-            <ul class="list-link">
+        <div class="footer__list-adress">
+          <div class="footer__adress">
+            <a class="logo logo-footer" href="./index.html"
+              >Web<span class="logo-studio-white">Studio</span>
+            </a>
+            <address>
+              <ul class="list-link">
+                <li>
+                  <a
+                    class="adress"
+                    href="https://goo.gl/maps/oir7WCfMX85fitZb6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="footer-contacts">
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="footer-contacts">
+                  <a href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-link">
+            <p class="footer-text">приєднуйтесь</p>
+            <ul class="footer-social-list">
               <li>
-                <a
-                  class="adress"
-                  href="https://goo.gl/maps/oir7WCfMX85fitZb6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
+                <a class="footer-link" href="#">
+                  <svg class="footer-svg" width="20" height="20">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer-contacts">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li>
+                <a class="footer-link" href="#">
+                  <svg class="footer-svg" width="20" height="20">
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts">
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <li>
+                <a class="footer-link" href="#">
+                  <svg class="footer-svg" width="20" height="20">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">
+                  <svg class="footer-svg" width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-social-link">
-          <p class="footer-text">приєднуйтесь</p>
-          <ul class="footer-social-list">
-            <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-svg" width="20" height="20">
-                  <use href="./img/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <form class="footer-send-form" action=" ">
           <div>
             <label for="form-footer" class="form-label-footer"
@@ -356,6 +441,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer>        
+    <script src="./js/menu.js"></script>
   </body>
 </html>
