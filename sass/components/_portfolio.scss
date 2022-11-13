@@ -66,6 +66,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  
 }
 .portfolio__overlay-text {
   position: absolute;
@@ -94,13 +101,24 @@
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  flex-grow: 1;
 }
 .portfolio__all-items {
-  flex-basis: calc((100% - 60px) / 3);
-  min-width: 450px;
+  
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+     max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370;
+    
+  }
 }
 .portfolio__all-items-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
