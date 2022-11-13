@@ -3,7 +3,7 @@
   padding-top: 60px;
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
-     padding-top: 94px;
+    padding-top: 94px;
   }
 }
 .portfolio__btn {
@@ -50,16 +50,15 @@
 .portfolio__list-button {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
   gap: 8px;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
-    
   }
 }
 .portfolio__top-list {
@@ -72,7 +71,6 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 60px) / 3);
   }
-  
 }
 .portfolio__overlay-text {
   position: absolute;
@@ -104,14 +102,12 @@
   flex-grow: 1;
 }
 .portfolio__all-items {
-  
   max-width: 450px;
   @media screen and (min-width: 768px) {
-     max-width: 354px;
+    max-width: 354px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 370;
-    
   }
 }
 .portfolio__all-items-link {
