@@ -244,7 +244,12 @@ img {
   position: fixed;
   width: 100vw;
   height: 100%;
-  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-right: 15px;
+  padding-left: 40px;
+  padding-bottom: 50px;
   z-index: 1;
   top: 0;
   overflow: auto;
@@ -279,9 +284,6 @@ img {
   fill: var(--hover-color);
 }
 
-.mob-menu__nav {
-  margin-bottom: 300px;
-}
 .mob-menu__nav li:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -296,6 +298,10 @@ img {
 }
 .mob-menu__nav-list:hover, .mob-menu__nav-list:focus {
   color: var(--hover-color);
+}
+
+.mob-menu__section {
+  margin-top: auto;
 }
 
 .mob-menu__contacts {
